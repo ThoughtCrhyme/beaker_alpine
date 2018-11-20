@@ -30,6 +30,8 @@ ENV BUNDLE_PATH=/module/.bundle/gems
 
 COPY ./bundle_beaker.sh /bundle_beaker.sh
 
+RUN mkdir /module
+
 RUN /usr/bin/beaker --version
 RUN ruby --version
 
