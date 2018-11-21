@@ -33,4 +33,5 @@ COPY ./bundle_beaker.sh /bundle_beaker.sh
 RUN /usr/bin/beaker --version
 RUN ruby --version
 
-ENTRYPOINT ["sh", "bundle_beaker.sh"]
+CMD ["/bundle_beaker.sh"]
+WORKDIR /module
